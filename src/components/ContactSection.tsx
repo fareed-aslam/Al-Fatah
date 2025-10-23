@@ -1,6 +1,8 @@
 "use client"
 import { useState } from "react";
 import { Clock, MapPin } from "lucide-react";
+import emailjs from "@emailjs/browser";
+
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -16,11 +18,34 @@ export default function ContactSection() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e:any) => {
-    e.preventDefault();
-    alert("Message sent successfully! (Demo only)");
-    console.log("Form data:", formData);
-  };
+ const handleSubmit = (e: any) => {
+  e.preventDefault();
+
+  emailjs
+    .send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,     // 🔹 Your EmailJS Service ID
+       process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID2!,    // 🔹 Your EmailJS Template ID
+      formData,             // 🔹 Data from your form
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!     // 🔹 Your EmailJS Public Key
+    )
+    .then(() => {
+      alert("✅ Message sent successfully!");
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    })
+    .catch((error) => {
+      console.error("Email send failed:", error);
+      alert("❌ Failed to send message. Try again later.");
+    });
+};
+
+
+        
 
   return (
     <div className="min-h-screen bg-white py-16 px-6">
@@ -170,3 +195,8 @@ export default function ContactSection() {
     </div>
   );
 }
+
+
+
+
+
