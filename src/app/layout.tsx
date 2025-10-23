@@ -6,6 +6,8 @@ import Header from "@/components/Header";
 const manrope=Manrope({
   subsets:["latin"]
 })
+import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/sonner"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,11 +34,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${manrope.className} antialiased`}
       >
-        <Header></Header>
-        <main>
+        <Toaster richColors position="top-right" />
+        <Header />
+        <main>{children}</main>
 
-        {children}
-        </main>
+        <Footer />
       </body>
     </html>
   );
