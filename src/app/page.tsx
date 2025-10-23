@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import BlogNewsSection from "@/components/BlogSection";
 import { FAQSection } from "@/components/FAQSection";
 import Features from "@/components/Features";
 import Header from "@/components/Header";
@@ -18,8 +19,9 @@ export default function Home() {
       <Text />
       <WhatWeDo />
       <OurServices />
-      <FAQSection/>
-      <TestimonialCarousel/>
+      <FAQSection />
+      <TestimonialCarousel />
+      <BlogNewsSection/>
     </main>
   );
 }
