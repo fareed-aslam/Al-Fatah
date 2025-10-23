@@ -99,7 +99,9 @@ export default function TestimonialCarousel() {
                   quote={card.quote}
                   author={card.author}
                   title={card.title}
-                  variant={card.variant}
+                  variant={
+                    (card.position === 0) ? "dark" : "light"
+                  }
                 />
               </div>
             ))}
