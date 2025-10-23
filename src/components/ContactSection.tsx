@@ -116,7 +116,8 @@ export default function ContactSection() {
               Get in <span className="font-light">Touch</span>
             </h2>
             <p className="text-teal-50 mb-8">
-              Lorem ipsum dolor sit amet, consectetur elit.
+              Have questions or need an appointment? Our team at Al Fatah is
+              here to help you every step of the way.
             </p>
 
             <div className="space-y-6">
@@ -127,7 +128,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium text-white">
-                    Saturday: 9:00 am - 4:00 pm
+                    Everyday: 10:00 am - 7:00 am(Sunday off)
                   </p>
                 </div>
               </div>
@@ -139,9 +140,9 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium text-white">
-                    4060 Sheridan St. Hollywood, FL Yellow
+                    Gulistan e Johar, Near Dubai Palace,
                   </p>
-                  <p className="font-medium text-white">Green, 33021</p>
+                  <p className="font-medium text-white">Karachi, Pakistan</p>
                 </div>
               </div>
             </div>
