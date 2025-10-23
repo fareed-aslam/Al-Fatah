@@ -85,7 +85,7 @@ export default function TestimonialCarousel() {
 
         {/* Carousel */}
         <div className="relative">
-          <div className="flex justify-center items-center gap-4 md:gap-6 mb-8">
+          <div className="flex justify-center items-center gap-4 md:gap-6 mb-8  h-[400px] md:h-[420px]">
             {getVisibleCards().map((card) => (
               <div
                 key={card.id}
@@ -99,9 +99,7 @@ export default function TestimonialCarousel() {
                   quote={card.quote}
                   author={card.author}
                   title={card.title}
-                  variant={
-                    (card.position === 0) ? "dark" : "light"
-                  }
+                  variant={card.position === 0 ? "dark" : "light"}
                 />
               </div>
             ))}
