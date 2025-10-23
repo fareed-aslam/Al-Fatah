@@ -32,7 +32,7 @@ export default function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-accent rounded-2xl p-8 bg-teal-600 text-accent-foreground"
+              className=" rounded-2xl p-8 bg-teal-600 text-accent-foreground"
             >
               <div className="bg-white rounded-xl w-16 h-16 flex items-center justify-center mb-6 text-2xl">
                 {feature.icon}

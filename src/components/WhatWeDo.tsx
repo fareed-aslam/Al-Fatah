@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function WhatWeDo() {
   return (
-    <section className="w-full m-4 rounded-lg bg-linear-to-b from-white via-teal-50 to-teal-200 py-20 px-4">
+    <section className="w-full rounded-lg bg-linear-to-b from-white via-teal-50 to-teal-200 py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
