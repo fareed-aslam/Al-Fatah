@@ -32,7 +32,7 @@ export default function TestimonialCard({
 
       {/* Quote Text */}
       <p
-        className={`text-base leading-relaxed mb-6 ${
+        className={`text-base leading-relaxed font-bold mb-6 ${
           isDark ? "text-gray-200" : "text-slate-700"
         }`}
       >
