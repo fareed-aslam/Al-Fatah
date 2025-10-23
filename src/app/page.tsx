@@ -2,6 +2,7 @@ import About from "@/components/About";
 import BlogNewsSection from "@/components/BlogSection";
 import { FAQSection } from "@/components/FAQSection";
 import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import OurServices from "@/components/Services";
@@ -21,7 +22,8 @@ export default function Home() {
       <OurServices />
       <FAQSection />
       <TestimonialCarousel />
-      <BlogNewsSection/>
+      <BlogNewsSection />
+      <Footer/>
     </main>
   );
 }
