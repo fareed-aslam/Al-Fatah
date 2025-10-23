@@ -11,7 +11,7 @@ export default function Hero() {
           {/* Left Content */}
           <div className="flex flex-col justify-center space-y-6 order-2 lg:order-1 px-4 sm:px-6 lg:px-8  lg:ml-20">
             <div className="w-full">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:text-left">
+              <h1 className="text-4xl  text-white sm:text-5xl lg:text-6xl font-bold leading-tight lg:text-left">
                 Bright Smiles, Gentle Care, Trusted Experts{" "}
                 <span className="text-teal-500">in Karachi</span>
               </h1>

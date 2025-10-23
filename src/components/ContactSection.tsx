@@ -38,7 +38,7 @@ export default function ContactSection() {
         message: "",
       });
     })
-    .catch((error) => {
+    .catch((error: any) => {
       console.error("Email send failed:", error);
       alert("❌ Failed to send message. Try again later.");
     });

@@ -1,16 +1,16 @@
 import Image from "next/image";
 import React from "react";
 // Assuming HeroDark is imported and defined elsewhere
-import HeroDark from "@/components/Hero-2";
 import MeetTheTeam from "@/components/MeetTheTeam";
-
+import HeroDark from "@/components/HeroDark";
+HeroDark
 const AboutPage = () => {
   // The specific color for //bakchodi #3BBCA6.
   const accentColorClass = "#3BBCA6";
 
   return (
     <div className="min-h-screen bg-white">
-      <HeroDark />
+      <HeroDark text="About us"/>
 
       {/* --- Main Content Section (White area) --- */}
 
@@ -58,14 +58,13 @@ const AboutPage = () => {
             {/* Consulting Image (meeting) */}
             <div
               className="relative w-full overflow-hidden rounded-lg mb-6 shadow-md"
-              style={{ height: "250px" }}
+              style={{ height: "350px" }}
             >
               <Image
                 src="/about2.png"
                 alt="Business consulting meeting"
                 fill
-                className="object-fill scale-110 rounded-lg transition-transform duration-500 ease-in-out"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
             </div>
 
@@ -176,13 +175,12 @@ const AboutPage = () => {
 
           {/* RIGHT SIDE (Next.js Image) */}
           <div className="md:w-1/2 flex justify-center">
-            <div className="relative w-[630px] h-[520px] max-w-full">
+            <div className="relative w-full h-[250px] sm:h-[400px] overflow-hidden">
               <Image
-                src={"/table.png"}
+                src="/table.png"
                 alt="Company Team"
                 fill
                 className="object-cover rounded-xl"
-                style={{ opacity: 1, transform: "rotate(0deg)" }}
               />
             </div>
           </div>

@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { ContactFormDialog } from "./GetInTouch";
+import Link from "next/link";
 
 
 // export default function Header() {
@@ -128,37 +128,37 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a
-              href="#"
+            <Link
+              href="/"
               className="text-white hover:text-teal-500 transition-colors text-sm"
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/about"
               className="text-white hover:text-teal-500 transition-colors text-sm"
             >
               About
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/services"
               className="text-white hover:text-teal-500 transition-colors text-sm"
             >
               Services
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/blog"
               className="text-white hover:text-teal-500 transition-colors text-sm"
             >
               Blog
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/contact"
               className="text-white hover:text-teal-500 transition-colors text-sm"
             >
               Contact
-            </a>
-            <button 
+            </Link>
+            <button
               onClick={() => setShowContactForm(true)}
               className="bg-teal-500 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-teal-600 transition-colors"
             >
@@ -178,44 +178,43 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden bg-cyan-950 border-t border-cyan-900">
-            <div className="px-4 py-4 space-y-4">
-              <a
-                href="#"
-                className="block text-white hover:text-teal-500 transition-colors"
+            <div className="px-4 py-4 flex flex-col space-y-4">
+              <Link
+                href="/"
+                className="text-white hover:text-teal-500 transition-colors text-sm"
               >
                 Home
-              </a>
-              <a
-                href="#"
-                className="block text-white hover:text-teal-500 transition-colors"
+              </Link>
+              <Link
+                href="/about"
+                className="text-white hover:text-teal-500 transition-colors text-sm"
               >
                 About
-              </a>
-              <a
-                href="#"
-                className="block text-white hover:text-teal-500 transition-colors"
+              </Link>
+              <Link
+                href="/services"
+                className="text-white hover:text-teal-500 transition-colors text-sm"
               >
                 Services
-              </a>
-              <a
-                href="#"
-                className="block text-white hover:text-teal-500 transition-colors"
+              </Link>
+              <Link
+                href="/blog"
+                className="text-white hover:text-teal-500 transition-colors text-sm"
               >
                 Blog
-              </a>
-              <a
-                href="#"
-                className="block text-white hover:text-teal-500 transition-colors"
+              </Link>
+              <Link
+                href="/contact"
+                className="text-white hover:text-teal-500 transition-colors text-sm"
               >
                 Contact
-              </a>
-              <button 
+              </Link>
+              <button
                 onClick={() => {
                   setShowContactForm(true);
                   setIsOpen(false);
                 }}
                 className="w-full bg-teal-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-teal-600 transition-colors"
-
               >
                 Get in Touch
               </button>
@@ -224,7 +223,10 @@ export default function Header() {
         )}
       </header>
 
-      <ContactFormDialog open={showContactForm} onOpenChange={setShowContactForm} />
+      <ContactFormDialog
+        open={showContactForm}
+        onOpenChange={setShowContactForm}
+      />
     </>
   );
 }

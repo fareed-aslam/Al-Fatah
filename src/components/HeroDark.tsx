@@ -12,13 +12,13 @@ const HeroDark = ({ text }: HeroDarkProps) => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="w-full grid md:grid-cols-2 gap-0">
+      <div className="w-full grid md:grid-cols-2  gap-0">
         {/* LEFT HALF */}
-        <div className="bg-gray-900 text-white flex flex-col justify-center px-6 sm:px-8 lg:px-12 py-16 sm:py-20 lg:py-24">
+        <div className="bg-gray-900 text-white  flex flex-col justify-center px-6 sm:px-8 lg:px-12 py-16 sm:py-20 sm:pt-0 pt-32 lg:py-24">
           <div className="max-w-7xl md:ml-0 md:mr-auto">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-4">
-                <span className="font-light">{firstWord}</span>{" "}
-                <span className="font-bold">{rest}</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-4">
+              <span className="font-light">{firstWord}</span>{" "}
+              <span className="font-bold">{rest}</span>
             </h1>
             <div className="flex items-center space-x-2 text-sm sm:text-base">
               <a href="#" className="hover:text-teal-400 transition">
