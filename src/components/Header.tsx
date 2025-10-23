@@ -25,7 +25,7 @@ export default function Header() {
             Home
           </Link>
           <Link
-            href="#"
+            href="/about"
             className="text-foreground hover:text-accent transition-colors text-sm"
           >
             About
