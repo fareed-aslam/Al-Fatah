@@ -12,50 +12,50 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="text-accent font-bold text-lg">CHANGE</div>
-          <div className="text-foreground font-light text-lg">IT NOW</div>
+          <div className="text-white font-bold text-lg">AL FATAH</div>
+          <div className="text-white font-light text-lg">Dental Care</div>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <Link
             href="#"
-            className="text-foreground hover:text-accent transition-colors text-sm"
+            className="text-white hover:text-teal-500 transition-colors text-sm"
           >
             Home
           </Link>
           <Link
             href="#"
-            className="text-foreground hover:text-accent transition-colors text-sm"
+            className="text-white hover:text-teal-500 transition-colors text-sm"
           >
             About
           </Link>
           <Link
             href="#"
-            className="text-foreground hover:text-accent transition-colors text-sm"
+            className="text-white hover:text-teal-500 transition-colors text-sm"
           >
             Services
           </Link>
           <Link
             href="#"
-            className="text-foreground hover:text-accent transition-colors text-sm"
+            className="text-white hover:text-teal-500 transition-colors text-sm"
           >
             Blog
           </Link>
           <Link
             href="#"
-            className="text-foreground hover:text-accent transition-colors text-sm"
+            className="text-white hover:text-teal-500 transition-colors text-sm"
           >
             Contact
           </Link>
-          <button className="bg-accent text-accent-foreground px-6 py-2 rounded-full text-sm font-medium hover:bg-accent/90 transition-colors">
+          <button className="bg-accent text-black-foreground px-6 py-2 rounded-full text-sm font-medium hover:bg-accent/90 transition-colors">
             Get in Touch
           </button>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-foreground"
+          className="md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -68,35 +68,35 @@ export default function Header() {
           <div className="px-4 py-4 space-y-4">
             <Link
               href="#"
-              className="block text-foreground hover:text-accent transition-colors"
+              className="block text-white hover:text-teal-500 transition-colors"
             >
               Home
             </Link>
             <Link
               href="#"
-              className="block text-foreground hover:text-accent transition-colors"
+              className="block text-white hover:text-teal-500 transition-colors"
             >
               About
             </Link>
             <Link
               href="#"
-              className="block text-foreground hover:text-accent transition-colors"
+              className="block text-white hover:text-teal-500 transition-colors"
             >
               Services
             </Link>
             <Link
               href="#"
-              className="block text-foreground hover:text-accent transition-colors"
+              className="block text-white hover:text-teal-500 transition-colors"
             >
               Blog
             </Link>
             <Link
               href="#"
-              className="block text-foreground hover:text-accent transition-colors"
+              className="block text-white hover:text-teal-500 transition-colors"
             >
               Contact
             </Link>
-            <button className="w-full bg-accent text-accent-foreground px-6 py-2 rounded-full text-sm font-medium hover:bg-accent/90 transition-colors">
+            <button className="w-full bg-accent text-black-foreground px-6 py-2 rounded-full text-sm font-medium hover:bg-accent/90 transition-colors">
               Get in Touch
             </button>
           </div>

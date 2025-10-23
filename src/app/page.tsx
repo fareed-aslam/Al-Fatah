@@ -4,6 +4,7 @@ import Features from "@/components/Features";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import OurServices from "@/components/Services";
+import TestimonialCarousel from "@/components/TestimonialCarousal";
 import Text from "@/components/Text";
 import WhatWeDo from "@/components/WhatWeDo";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <WhatWeDo />
       <OurServices />
       <FAQSection/>
+      <TestimonialCarousel/>
     </main>
   );
 }
