@@ -11,19 +11,19 @@ export default function Hero() {
           {/* Left Content */}
           <div className="flex flex-col justify-center space-y-6 order-2 lg:order-1 px-4 sm:px-6 lg:px-8  lg:ml-20">
             <div className="w-full">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight lg:text-left">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:text-left">
                 Bright Smiles, Gentle Care, Trusted Experts{" "}
                 <span className="text-teal-500">in Karachi</span>
               </h1>
             </div>
-            <p className="text-zinc-100 text-base sm:text-base leading-relaxed max-w-md">
+            <p className="text-muted-foreground text-base sm:text-base leading-relaxed max-w-md">
               Al Fatah Dental Care is one of Karachi’s leading dental clinics,
               combining expert treatments with a warm, caring environment. We
               help patients achieve healthy, confident smiles using advanced
               technology and professional care.
             </p>
 
-            <button className="inline-flex bg-teal-500 w-max items-center gap-2 text-accent-foreground px-6 py-3 rounded-lg font-medium hover:bg-accent/90 transition-colors">
+            <button className="inline-flex bg-teal-500 w-max items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg font-medium hover:bg-accent/90 transition-colors">
               Book Your Appointment Today <ArrowRight size={18} />
             </button>
           </div>
@@ -40,7 +40,7 @@ export default function Hero() {
             </div>
 
             {/* Testimonial Card */}
-            <div className="absolute bg-white text-black bottom-6 left-6 rounded-lg p-4 shadow-xl max-w-50">
+            <div className="absolute bg-white text-black bottom-6 left-6 bg-card rounded-lg p-4 shadow-xl max-w-50">
               <div className="flex items-center gap-2 mb-3">
                 <div className="flex -space-x-2">
                   <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-white">

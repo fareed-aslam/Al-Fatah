@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronRight, X, CheckCircle2 } from "lucide-react";
+import emailjs from "emailjs-com"; // ✅ NEW IMPORT
 
 type ServiceId =
   | "dental-implants"
@@ -220,7 +221,7 @@ const servicesList: { id: ServiceId; name: string }[] = [
 ];
 
 export default function ServicesExtra() {
-  const [selectedService, setSelectedService] =
+    const [selectedService, setSelectedService] =
     useState<ServiceId>("dental-implants");
   const [formData, setFormData] = useState({
     name: "",
@@ -228,6 +229,10 @@ export default function ServicesExtra() {
     service: "",
     message: "",
   });
+
+  const [loading, setLoading] = useState(false); // ✅ NEW (for button loading)
+  const [sent, setSent] = useState(false); // ✅ NEW (for success msg)
+
   const currentService = servicesData[selectedService];
 
   const handleInputChange = (e: any) => {
@@ -235,10 +240,37 @@ export default function ServicesExtra() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    alert("Form submitted! (This is a demo - no actual submission occurs)");
-    console.log("Form data:", formData);
+    if (!formData.name || !formData.email || !formData.service) {
+      alert("Please fill all required fields");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const payload = {
+        ...formData,
+        created_at: new Date().toLocaleString(),
+      };
+
+      // ✅ EmailJS Send
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        payload,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+
+      setSent(true);
+      setFormData({ name: "", email: "", service: "", message: "" });
+      alert("✅ Appointment request sent successfully!");
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      alert("❌ Failed to send. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -389,6 +421,20 @@ export default function ServicesExtra() {
                 >
                   Send Message
                 </button>
+
+                {/* <button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full px-4 py-3 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition-colors disabled:opacity-70"
+                >
+                  {loading ? "Sending..." : "Send Message"}
+                </button>
+
+                {sent && (
+                  <p className="text-green-600 text-sm mt-2 text-center">
+                    ✅ Message sent successfully!
+                  </p>
+                )} */}
               </div>
             </div>
           </div>
