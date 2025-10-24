@@ -10,7 +10,7 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <HeroDark text="About us"/>
+      <HeroDark text="About us" />
 
       {/* --- Main Content Section (White area) --- */}
 
@@ -19,10 +19,11 @@ const AboutPage = () => {
           {/* LEFT SIDE: Mission Statement and Large Image */}
           <div className="flex flex-col">
             <p className="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-2">
-              About Company
+              About Clinic
             </p>
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-gray-900 mb-8">
-              We Work For Building a Brighter Future Together and Grow Business
+              Bright Smiles, Gentle Care — Your Trusted Dental Experts in
+              Karachi
             </h2>
 
             {/* Image of the two people */}
@@ -51,7 +52,7 @@ const AboutPage = () => {
                 25+
               </p>
               <p className="text-lg text-gray-700 font-semibold mt-2">
-                Years Of Experience In Business Consulting
+                Years of Trusted Dental Excellence
               </p>
             </div>
 
@@ -71,9 +72,10 @@ const AboutPage = () => {
             {/* Text Block and Checkmarks */}
             <div className="text-gray-600 space-y-4">
               <p>
-                Business consulting services are designed help organizations
-                navigate challenges, streamline operations a achieve long-term
-                success we work closely with clients to identify areas.
+                At Al Fatah Dental Care, we are dedicated to creating confident,
+                healthy smiles. Our experienced team combines advanced dental
+                technology with a gentle, patient-focused approach to provide
+                comprehensive care in a comfortable environment.
               </p>
 
               <div className="flex flex-wrap gap-y-2 gap-x-6 text-sm font-medium">
@@ -129,14 +131,14 @@ const AboutPage = () => {
                   </svg>
                 </div>
                 <h2 className="text-lg md:text-xl font-semibold text-gray-800">
-                  Company Mission
+                  Our Mission
                 </h2>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Our mission is to empower businesses by providing innovative,
-                data-driven solutions that drive growth, enhance efficiency, and
-                create lasting value. We are committed to delivering exceptional
-                service and personalized experiences.
+                Our mission is to help every patient achieve and maintain a
+                healthy, beautiful smile for life. We focus on providing
+                personalized care, using the latest techniques to ensure comfort
+                and long-lasting results.
               </p>
               <hr className="mt-5 border-gray-300" />
             </div>
@@ -161,14 +163,14 @@ const AboutPage = () => {
                   </svg>
                 </div>
                 <h2 className="text-lg md:text-xl font-semibold text-gray-800">
-                  Company Vision & Goals
+                  Our Vision
                 </h2>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Our vision is to be a global leader delivering transformative
-                business solutions that empower organizations to reach their
-                full potential. We strive to set a standard for innovation,
-                excellence, and customer success by continuously evolving.
+                To be Karachi’s most trusted dental clinic, known for
+                excellence, compassion, and innovation — where every patient
+                experiences quality care, comfort, and confidence in their
+                smile.
               </p>
             </div>
           </div>
