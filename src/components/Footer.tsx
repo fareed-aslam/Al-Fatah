@@ -1,6 +1,7 @@
 import { Facebook, Twitter, Linkedin, Youtube, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -14,9 +15,11 @@ export default function Footer() {
               <span className="font-normal">Al Fatah Dental Care</span>
             </h2>
           </div>
-          <Button className="bg-teal-500 hover:bg-teal-600 text-slate-900 font-semibold px-6 py-2 rounded-sm whitespace-nowrap">
-            Book Now →
-          </Button>
+          <Link href="/services">
+            <Button className="bg-teal-500 hover:bg-teal-600 text-slate-900 font-semibold px-6 py-2 rounded-sm whitespace-nowrap">
+              Book Now →
+            </Button>
+          </Link>
         </div>
       </div>
 
@@ -89,34 +92,52 @@ export default function Footer() {
             <h3 className="font-bold text-white mb-4">Our Services</h3>
             <ul className="space-y-3 text-sm text-gray-400">
               <li>
-                <a href="#" className="hover:text-teal-500 transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-teal-500 transition-colors"
+                >
                   Dental Implants
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-teal-500 transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-teal-500 transition-colors"
+                >
                   Zirconia Crowns
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-teal-500 transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-teal-500 transition-colors"
+                >
                   PFM Crowns
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-teal-500 transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-teal-500 transition-colors"
+                >
                   Removable Dentures
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-teal-500 transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-teal-500 transition-colors"
+                >
                   Whitening / Scaling & Polishing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-teal-500 transition-colors">
+                <Link
+                  href="/services"
+                  className="hover:text-teal-500 transition-colors"
+                >
                   Braces / Invisible Aligners
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -148,18 +169,32 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
           <p>Copyright © 2025 Al Fatah Dental Care. All Rights Reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-teal-500 transition-colors">
-              Imprint
-            </a>
-            <a href="#" className="hover:text-teal-500 transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-teal-500 transition-colors">
-              Terms and Conditions
-            </a>
-            <a href="#" className="hover:text-teal-500 transition-colors">
-              Support
-            </a>
+            <div className="flex flex-col space-y-2">
+              <Link
+                href="/imprint"
+                className="hover:text-teal-500 transition-colors"
+              >
+                Imprint
+              </Link>
+              <Link
+                href="/imprint"
+                className="hover:text-teal-500 transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/imprint"
+                className="hover:text-teal-500 transition-colors"
+              >
+                Terms and Conditions
+              </Link>
+              <Link
+                href="/imprint"
+                className="hover:text-teal-500 transition-colors"
+              >
+                Support
+              </Link>
+            </div>
           </div>
         </div>
       </div>

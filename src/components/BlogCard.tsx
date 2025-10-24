@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Plus } from "lucide-react";
 import { MessageCircle, Calendar } from "lucide-react";
+import Link from "next/link";
 
 interface BlogPost {
   id: number;
@@ -49,11 +50,11 @@ export default function BlogCard({ post }: { post: BlogPost }) {
         </p>
 
         {/* Footer */}
-        <div className="flex justify-start">
+        <Link href="/coming-soon">
           <button className="w-max text-gray-400 hover:text-gray-600 transition-colors">
             <Plus className="w-6 h-6" />
           </button>
-        </div>
+        </Link>
       </div>
     </div>
   );

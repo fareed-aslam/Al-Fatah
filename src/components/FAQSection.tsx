@@ -2,6 +2,8 @@
 
 import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 import {
   Accordion,
   AccordionContent,
@@ -93,14 +95,15 @@ export function FAQSection() {
                 <span className="text-white">Questions</span>
               </h1>
               <p className="text-gray-400 text-base leading-relaxed max-w-md">
-                Get clarity on the most common questions clients ask about our
-                financial planning, investment, and advisory services.
+                Get clarity on the most common questions clients ask services.
               </p>
             </div>
-            <button className="w-max flex flex-row items-center bg-teal-400 hover:bg-cyan-500 text-zinc-900 font-semibold px-6 py-2 rounded-md transition-colors">
-              Get a Quote
-              <ChevronRight className="w-4 h-4 ml-2" />
-            </button>
+            <Link href="/contact">
+              <button className="w-max flex items-center bg-teal-400 hover:bg-cyan-500 text-zinc-900 font-semibold px-6 py-2 rounded-md transition-colors">
+                Get a Quote
+                <ChevronRight className="w-4 h-4 ml-2" />
+              </button>
+            </Link>
           </div>
 
           {/* Right Section - Shadcn Accordion */}

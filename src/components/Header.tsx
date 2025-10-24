@@ -121,10 +121,12 @@ export default function Header() {
       <header className="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] md:w-[70%] rounded-lg bg-cyan-950 border-border z-50">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="text-white font-bold text-lg">AL FATAH</div>
-            <div className="text-white font-light text-lg">Dental Care</div>
-          </div>
+          <Link href="/">
+            <div className="flex items-center gap-2 cursor-pointer">
+              <span className="text-white font-bold text-lg">AL FATAH</span>
+              <span className="text-white font-light text-lg">Dental Care</span>
+            </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -147,7 +149,7 @@ export default function Header() {
               Services
             </Link>
             <Link
-              href="/blog"
+              href="/coming-soon"
               className="text-white hover:text-teal-500 transition-colors text-sm"
             >
               Blog
@@ -198,7 +200,7 @@ export default function Header() {
                 Services
               </Link>
               <Link
-                href="/blog"
+                href="/coming-soon"
                 className="text-white hover:text-teal-500 transition-colors text-sm"
               >
                 Blog

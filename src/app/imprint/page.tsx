@@ -23,9 +23,7 @@ export default function ImprintPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-3">
                 Authorized Representative
               </h2>
-              <p className="text-sm text-gray-600">
-                Dr. [Full Name of Lead Dentist or Clinic Owner]
-              </p>
+              <p className="text-sm text-gray-600">AL FATAH Dental Care</p>
             </div>
 
             {/* Registered Address */}
@@ -95,8 +93,6 @@ export default function ImprintPage() {
           </div>
         </div>
       </div>
-
-      
     </>
   );
 }

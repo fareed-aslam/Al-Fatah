@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -22,9 +23,11 @@ export default function About() {
               reflects our commitment to comfort, safety, and patient
               satisfaction.
             </p>
-            <button className="bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-              Learn More &gt;
-            </button>
+            <Link href="/about">
+              <button className="bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                Learn More &gt;
+              </button>
+            </Link>
           </div>
 
           {/* Right Image */}

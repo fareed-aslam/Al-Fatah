@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BlogCard from "./BlogCard";
+import Link from "next/link";
+
 import FeaturedBlogCard from "./FeaturedBlogCard";
 const blogPosts = [
   {
@@ -48,13 +50,15 @@ export default function BlogNewsSection() {
               <span className="text-muted-foreground"> & News</span>
             </h2>
           </div>
-          <Button
-            variant="outline"
-            className="w-fit bg-slate-500 hover:bg-slate-600 text-white border-0"
-          >
-            View All Blog
-            <ArrowRight className="w-4 h-4 ml-2" />
-          </Button>
+          <Link href="/coming-soon">
+            <Button
+              variant="outline"
+              className="w-fit bg-slate-500 hover:bg-slate-600 text-white border-0"
+            >
+              View All Blogs
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
+          </Link>
         </div>
 
         {/* Blog Cards Grid */}

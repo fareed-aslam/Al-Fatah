@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { MessageCircle, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface BlogPost {
   id: number;
@@ -49,9 +50,11 @@ export default function FeaturedBlogCard({ post }: { post: BlogPost }) {
         </p>
 
         {/* Button */}
-        <Button className="w-max bg-teal-500 hover:bg-teal-600 text-white border-0">
-          + Read More
-        </Button>
+        <Link href="/coming-soon">
+          <Button className="w-max bg-teal-500 hover:bg-teal-600 text-white border-0">
+            + Read More
+          </Button>
+        </Link>
       </div>
     </div>
   );
