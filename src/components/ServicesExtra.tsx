@@ -33,7 +33,7 @@ const servicesData: Record<ServiceId, ServiceData> = {
     title: "Dental Implant Treatment",
     description:
       "At Al Fatah Dental Care, we specialize in restoring smiles through advanced dental implant treatments. Whether you're missing one tooth or several, our expert dentists provide durable, natural-looking implants that feel and function just like real teeth — helping you eat, speak, and smile with full confidence.",
-    image: "/dental-implant-procedure.jpg",
+    image: "/services.png",
     imageAlt: "Dental Implant Procedure at Al Fatah Dental Care",
     processTitle: "Our Simple Implant Process",
     processDescription:
@@ -63,7 +63,7 @@ const servicesData: Record<ServiceId, ServiceData> = {
     title: "Zirconia Crown Treatment",
     description:
       "At Al Fatah Dental Care, we offer premium zirconia crowns that combine exceptional strength with natural aesthetics. These metal-free restorations are designed to restore damaged or weakened teeth while maintaining a beautiful, translucent appearance that blends seamlessly with your natural smile.",
-    image: "/zirconia-crowns.jpg",
+    image: "/services.png",
     imageAlt: "Zirconia Crown Treatment at Al Fatah Dental Care",
     processTitle: "Our Crown Placement Process",
     processDescription:
@@ -93,7 +93,7 @@ const servicesData: Record<ServiceId, ServiceData> = {
     title: "Professional Teeth Whitening",
     description:
       "At Al Fatah Dental Care, we help you achieve a brighter, more confident smile with our professional teeth whitening treatments. Using safe, effective techniques, we can lighten your teeth by several shades in just one visit, removing years of stains from coffee, tea, wine, and aging.",
-    image: "/teeth-whitening.jpg",
+    image: "/services.png",
     imageAlt: "Teeth Whitening Treatment at Al Fatah Dental Care",
     processTitle: "Our Whitening Process",
     processDescription:
@@ -123,7 +123,7 @@ const servicesData: Record<ServiceId, ServiceData> = {
     title: "Braces & Clear Aligners",
     description:
       "At Al Fatah Dental Care, we offer comprehensive orthodontic solutions including traditional braces and modern clear aligners. Whether you're dealing with crowded teeth, gaps, or bite issues, our experienced orthodontists will create a personalized treatment plan to give you the straight, healthy smile you deserve.",
-    image: "/braces-aligners.jpg",
+    image: "/services.png",
     imageAlt: "Braces and Aligners Treatment at Al Fatah Dental Care",
     processTitle: "Your Orthodontic Journey",
     processDescription:
@@ -153,7 +153,7 @@ const servicesData: Record<ServiceId, ServiceData> = {
     title: "Root Canal Treatment",
     description:
       "At Al Fatah Dental Care, we provide gentle, effective root canal treatments that save infected teeth and eliminate pain. Using modern techniques and advanced technology, our specialists can preserve your natural tooth while removing infection and restoring your oral health comfortably.",
-    image: "/root-canal.jpg",
+    image: "/services.png",
     imageAlt: "Root Canal Treatment at Al Fatah Dental Care",
     processTitle: "Our Root Canal Procedure",
     processDescription:
@@ -183,7 +183,7 @@ const servicesData: Record<ServiceId, ServiceData> = {
     title: "Scaling & Polishing",
     description:
       "At Al Fatah Dental Care, we offer professional scaling and polishing treatments to maintain your oral health and keep your smile bright. This essential preventive care removes plaque, tartar, and surface stains, helping you prevent gum disease and cavities while maintaining fresh breath.",
-    image: "/scaling-polishing.jpg",
+    image: "/services.png",
     imageAlt: "Scaling and Polishing at Al Fatah Dental Care",
     processTitle: "Our Cleaning Process",
     processDescription:
