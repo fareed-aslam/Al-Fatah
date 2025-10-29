@@ -16,10 +16,10 @@ export default function About() {
               <span className="font-light">Heart of Karachi</span>
             </h2>
             <p className="text-zinc-700 text-base mb-8 leading-relaxed">
-              Al Fatah Dental Care has earned a reputation in Karachi for
+              Since 2016, Al Fatah Dental Care has earned a reputation in Karachi for
               delivering exceptional dental care with compassion and precision.
               Our highly skilled dentists bring years of experience in general,
-              cosmetic, and restorative dentistry. Every smile we care for
+              cosmetic, and restorative dentistry. Having served 8000+ clients, every smile we care for
               reflects our commitment to comfort, safety, and patient
               satisfaction.
             </p>

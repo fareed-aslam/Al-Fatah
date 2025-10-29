@@ -37,9 +37,8 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Al Fatah Dental Care is one of Karachi’s leading clinics,
-              providing expert, gentle, and compassionate dental treatments for
-              all ages.
+              Since 2016, Al Fatah Dental Care is one of Karachi’s leading clinics,
+              providing expert, gentle, and compassionate dental treatments to over 8000 happy clients
             </p>
             {/* Social Icons */}
             <div className="flex gap-4 pt-4">
