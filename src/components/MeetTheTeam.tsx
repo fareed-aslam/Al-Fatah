@@ -25,7 +25,7 @@ export default function MeetTheTeam() {
         {/* --- Member 1 --- */}
         <div className="relative w-[300px] h-[370px] rounded-[10px] overflow-hidden shadow-md group cursor-pointer transition-all">
           <Image
-            src={"/man.png"}
+            src={"/woman.png"}
             alt="Daniel L. Braddock"
             fill
             className="object-cover rounded-[10px]"
@@ -38,9 +38,11 @@ export default function MeetTheTeam() {
           {/* Info Box */}
           <div className="absolute bottom-0 left-0 right-0 bg-[#2DC6A5] text-white p-4 rounded-t-[10px] flex flex-col items-start transition-all duration-300 group-hover:p-6">
             <h3 className="font-semibold text-[14px] leading-none mb-1">
-              Daniel L. Braddock
+              Dr faiza jamali
             </h3>
-            <p className="text-[12px] mb-2">Business Consultant</p>
+            <p className="text-[12px] mb-2">
+              BDS, RDS, Clearpath Certified Dr faiza jamali
+            </p>
 
             {/* Icons (hidden by default, show on hover) */}
             <div className="flex items-center gap-3 text-white text-sm opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
@@ -67,9 +69,12 @@ export default function MeetTheTeam() {
           {/* Info Box */}
           <div className="absolute bottom-0 left-0 right-0 bg-white/90 text-[#1B1E23] p-4 rounded-t-[10px] flex flex-col items-start transition-all duration-300 group-hover:p-6">
             <h3 className="font-semibold text-[14px] leading-none mb-1">
-              Michael B. Reader
+              Dr. Shaista Zafar
             </h3>
-            <p className="text-[12px] mb-2">Business Consultant</p>
+            <p className="text-[12px] mb-2">
+              BDS, RDS C-implant C-Endo Clear aligners certified Dr. Shaista
+              Zafar
+            </p>
 
             {/* Icons (hidden by default, show on hover) */}
             <div className="flex items-center gap-3 text-[#1B1E23] text-sm opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">

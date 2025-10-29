@@ -17,10 +17,10 @@ export default function Hero() {
               </h1>
             </div>
             <p className="text-muted-foreground text-base sm:text-base leading-relaxed max-w-md">
-              Al Fatah Dental Care is one of Karachi’s leading dental clinics,
-              combining expert treatments with a warm, caring environment. We
-              help patients achieve healthy, confident smiles using advanced
-              technology and professional care.
+              Since 2016, Al Fatah Dental Care is one of Karachi’s leading
+              dental clinics, helping 8000+ patients and combining expert treatments
+              with a warm, caring environment. We help patients achieve healthy,
+              confident smiles using advanced technology and professional care.
             </p>
 
             <button className="inline-flex bg-teal-500 w-max items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg font-medium hover:bg-accent/90 transition-colors">
@@ -78,7 +78,7 @@ export default function Hero() {
                   <sup className="text-sm font-semibold">%</sup>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Clients are Satisfied with the Services
+                  Clients are Satisfied with the Services, over 8000 clients since 2016
                 </p>
               </div>
             </div>

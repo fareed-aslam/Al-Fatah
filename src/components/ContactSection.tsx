@@ -133,12 +133,29 @@ export default function ContactSection() {
           </div>
         </div>
 
-        {/* Bottom Section - Get in Touch and Map */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
           {/* Get in Touch Card */}
+
+          {/* Map */}
+          <div className="bg-white rounded-lg lg:col-span-1 overflow-hidden shadow-sm relative h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1914585981467!2d67.1501772!3d24.925546800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339c3edce5987%3A0xe4827e1199713d2!2sAL-FATAH%20DENTAL%20CARE!5e0!3m2!1sen!2s!4v1761752577772!5m2!1sen!2s"
+              width="600"
+              height="450"
+              loading="lazy"
+            ></iframe>
+            <div className="absolute top-4 right-4 flex flex-col gap-2">
+              <button className="w-10 h-10 bg-white rounded shadow-md flex items-center justify-center text-gray-700 hover:bg-gray-50">
+                +
+              </button>
+              <button className="w-10 h-10 bg-white rounded shadow-md flex items-center justify-center text-gray-700 hover:bg-gray-50">
+                −
+              </button>
+            </div>
+          </div>
           <div className="bg-linear-to-br lg:col-span-1 from-teal-500 to-teal-600 rounded-lg p-8 text-white shadow-lg">
             <h2 className="text-4xl font-bold mb-2">
-              Get in <span className="font-light">Touch</span>
+              Get in Touch → <span className="font-light">Office 1</span>
             </h2>
             <p className="text-teal-50 mb-8">
               Have questions or need an appointment? Our team at Al Fatah is
@@ -153,7 +170,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium text-white">
-                    Everyday: 10:00 am - 7:00 am(Sunday off)
+                    Everyday: 11 am - 7:30 pm(Sunday off)
                   </p>
                 </div>
               </div>
@@ -165,7 +182,49 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium text-white">
-                    Gulistan e Johar, Near Dubai Palace,
+                    House no 394, St. 2, Gulistan e Johar Block 9 Bakhtawar Goth
+                    Block 9 A bakhtawar colony, Karachi
+                  </p>
+                  <p className="font-medium text-white">Karachi, Pakistan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Bottom Section - Get in Touch and Map */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Get in Touch Card */}
+          <div className="bg-linear-to-br lg:col-span-1 from-teal-500 to-teal-600 rounded-lg p-8 text-white shadow-lg">
+            <h2 className="text-4xl font-bold mb-2">
+              Get in Touch → <span className="font-light">Office 2</span>
+            </h2>
+            <p className="text-teal-50 mb-8">
+              Have questions or need an appointment? Our team at Al Fatah is
+              here to help you every step of the way.
+            </p>
+
+            <div className="space-y-6">
+              {/* Hours */}
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0">
+                  <Clock className="w-5 h-5 text-teal-600" />
+                </div>
+                <div>
+                  <p className="font-medium text-white">
+                    Everyday: 9:30 am - 9 pm(Sunday off)
+                  </p>
+                </div>
+              </div>
+
+              {/* Address */}
+              <div className="flex items-start  gap-4">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0">
+                  <MapPin className="w-5 h-5 text-teal-600" />
+                </div>
+                <div>
+                  <p className="font-medium text-white">
+                    Office # 2, Ali Center, near Masjid-e-Tayyaba, Block 10
+                    Gulshan-e-Iqbal,
                   </p>
                   <p className="font-medium text-white">Karachi, Pakistan</p>
                 </div>
@@ -176,9 +235,9 @@ export default function ContactSection() {
           {/* Map */}
           <div className="bg-white rounded-lg lg:col-span-1 overflow-hidden shadow-sm relative h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d904.5900283346248!2d67.09385969919738!3d24.919799299999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3393720a9c703%3A0x9b4296f05392ee99!2sAl%20FATAH%20DENTAL%20CLINIC!5e0!3m2!1sen!2s!4v1761219377873!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.5957434914394!2d67.1004298!3d24.911767299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339d075033ca9%3A0x65ddaf07496a27ef!2s32-24%20Dental%20Clinic!5e0!3m2!1sen!2s!4v1761752349283!5m2!1sen!2s"
               width="600"
-              height="500"
+              height="450"
               loading="lazy"
             ></iframe>
             <div className="absolute top-4 right-4 flex flex-col gap-2">
