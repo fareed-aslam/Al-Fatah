@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Clock, MapPin } from "lucide-react";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
 
 
 export default function ContactSection() {
@@ -124,13 +125,29 @@ export default function ContactSection() {
           </div>
 
           {/* Image */}
-          <div className="rounded-lg overflow-hidden shadow-sm">
+          {/* <div className="rounded-lg overflow-hidden shadow-sm">
             <img
               src="/contact.png"
               alt="Professional team members"
               className="w-full h-full object-cover"
             />
-          </div>
+          </div> */}
+
+          {/* Image */}
+<div className="rounded-lg overflow-hidden shadow-sm">
+  <Image
+    src="/contact.png"
+    alt="Professional team members"
+    width={500}
+    height={500}
+    className="w-full h-full object-cover rounded-lg overflow-hidden shadow-sm"
+    priority             // ✅ preloads on first paint
+    fetchPriority="high" // ✅ browser-level hint to load immediately
+    quality={100}        // ✅ highest visual quality
+    sizes="(max-width: 768px) 100vw, 500px" // ✅ responsive hint for optimization
+  />
+</div>
+
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">

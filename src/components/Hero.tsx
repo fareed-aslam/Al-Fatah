@@ -5,8 +5,10 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
+    
     <section className="pt-24 sm:pt-0 min-h-screen bg-black flex items-center">
       <div className="mx-auto w-full ">
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 ">
           {/* Left Content */}
           <div className="flex flex-col justify-center space-y-6 order-2 lg:order-1 px-4 sm:px-6 lg:px-8  lg:ml-20">
@@ -30,15 +32,20 @@ export default function Hero() {
 
           {/* Right Image Section */}
           <div className="relative order-1 lg:order-2 h-96 lg:h-screen min-h-96">
-            <div className="relative w-full h-full  overflow-hidden">
-              <Image
-                src="/hero.png"
-                alt="Business team meeting"
-                fill
-                className="object-cover"
-              />
-            </div>
-
+           <div className="relative w-full h-full overflow-hidden">
+  <Image
+    src="/hero.png"
+    alt="Business team meeting"
+    fill
+    className="object-cover"
+    priority              // ✅ Preloads immediately (best for hero/above-the-fold)
+    fetchPriority="high"  // ✅ Browser-level priority hint
+    quality={90}          // ✅ Excellent visual quality + reduced file size
+    sizes="100vw"         // ✅ Ensures responsive optimization
+    loading="eager"       // ✅ Forces immediate loading (no lazy load)
+    decoding="async"      // ✅ Improves paint performance
+  />
+</div>
             {/* Testimonial Card */}
             <div className="absolute bg-white text-black bottom-6 left-6 bg-card rounded-lg p-4 shadow-xl max-w-50">
               <div className="flex items-center gap-2 mb-3">
