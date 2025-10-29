@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ChevronRight, X, CheckCircle2 } from "lucide-react";
 import emailjs from "emailjs-com"; // ✅ NEW IMPORT
+import Image from "next/image";
 
 type ServiceId =
   | "dental-implants"
@@ -290,13 +291,21 @@ export default function ServicesExtra() {
             </div>
 
             {/* Hero Image */}
-            <div className="mb-12 rounded-2xl overflow-hidden bg-gray-100">
-              <img
-                src={currentService.image}
-                alt={currentService.imageAlt}
-                className="w-full h-auto object-cover"
-              />
-            </div>
+<div className="mb-12 rounded-2xl overflow-hidden bg-gray-100">
+  <Image
+    src={currentService.image}
+    alt={currentService.imageAlt}
+    width={1200}               // ✅ Provide reasonable defaults (Next.js needs these)
+    height={800}
+    className="w-full h-auto object-cover"
+    quality={90}               // ✅ Great quality vs. file size trade-off
+    priority                   // ✅ Preload if above the fold
+    fetchPriority="high"       // ✅ Browser hint for faster loading
+    loading="eager"            // ✅ Start loading immediately
+    decoding="async"           // ✅ Improve render performance
+    sizes="(max-width: 768px) 100vw, 1200px" // ✅ Responsive optimization hint
+  />
+</div>
 
             {/* Process Section */}
             <div className="mb-12">

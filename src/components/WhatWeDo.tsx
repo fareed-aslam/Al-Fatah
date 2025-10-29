@@ -40,17 +40,21 @@ export default function WhatWeDo() {
           </div>
 
           {/* Middle Card - Image */}
-          <div className="rounded-xl overflow-hidden">
-            <Image
-              src="/whatwedo.png"
-              alt="Al Fatah Dental Care Clinic"
-              width={600}
-              height={500}
-              className="w-full h-full object-cover"
-              sizes="100vw"
-              priority
-            />
-          </div>
+<div className="rounded-xl overflow-hidden">
+  <Image
+    src="/whatwedo.png"
+    alt="Al Fatah Dental Care Clinic"
+    width={600}
+    height={500}
+    className="w-full h-full object-cover"
+    priority              // ✅ Preload for faster initial load
+    fetchPriority="high"  // ✅ Browser-level fetch boost
+    quality={90}          // ✅ Great balance: crisp but smaller file size
+    sizes="(max-width: 768px) 100vw, 600px" // ✅ Responsive optimization hint
+    loading="eager"       // ✅ Ensures it’s fetched immediately, not lazy-loaded
+    decoding="async"      // ✅ Improves rendering performance
+  />
+</div>
 
           {/* Right Card - Dark */}
           <div className="bg-gray-900 rounded-xl p-8 text-white flex flex-col justify-between shadow-md">
